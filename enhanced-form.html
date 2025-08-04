@@ -96,7 +96,6 @@
     <h2>Popular Web Technologies</h2>
     <p>Here are some core technologies used in web development:</p>
     
-    <!-- Unordered list example -->
     <ul>
       <li>HTML5 – Structure and content</li>
       <li>CSS3 – Styling and layouts</li>
@@ -104,7 +103,6 @@
     </ul>
 
     <h3>Frontend Frameworks (Ranked)</h3>
-    <!-- Ordered list example -->
     <ol>
       <li>React.js</li>
       <li>Vue.js</li>
@@ -115,7 +113,6 @@
   <!-- ===== TABLE SECTION ===== -->
   <section>
     <h2>HTML5 Input Types Overview</h2>
-    <!-- Table with header, body, and semantic cells -->
     <table>
       <thead>
         <tr>
@@ -149,13 +146,11 @@
     <h2>Learning Resources</h2>
     <p>Below is an image and an audio clip to demonstrate HTML5 media embedding:</p>
 
-    <!-- Image example -->
     <figure>
       <img src="https://via.placeholder.com/600x200" alt="Placeholder Image" style="width:100%;max-width:600px;">
       <figcaption>Figure 1: Sample placeholder image</figcaption>
     </figure>
 
-    <!-- Audio example -->
     <audio controls>
       <source src="sample-audio.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
@@ -166,27 +161,26 @@
   <section>
     <h2>Registration Form</h2>
 
-    <!-- novalidate used only for dev testing; remove for real validation -->
-    <form action="#" method="post" novalidate>
+    <form action="#" method="post">
       
-      <!-- Personal info fieldset -->
+      <!-- Personal info -->
       <fieldset>
         <legend>Personal Information</legend>
         
-        <!-- Text input -->
         <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" autocomplete="name">
         
-        <!-- Email input -->
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required autocomplete="email">
         
-        <!-- Telephone input with pattern -->
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+?\d{10,15}$" required>
+        
+        <label for="reg-id">Registration ID:</label>
+        <input type="text" id="reg-id" name="reg-id" value="HTM2025-001" readonly>
       </fieldset>
 
-      <!-- Account details fieldset -->
+      <!-- Account details -->
       <fieldset>
         <legend>Account Details</legend>
         
@@ -200,7 +194,7 @@
         <input type="password" id="confirm-password" name="confirm-password" required minlength="8">
       </fieldset>
 
-      <!-- Preferences fieldset -->
+      <!-- Preferences -->
       <fieldset>
         <legend>Preferences</legend>
         
@@ -220,7 +214,6 @@
         <textarea id="comments" name="comments" rows="4" placeholder="Write your message here..."></textarea>
       </fieldset>
 
-      <!-- Submit button -->
       <button type="submit">Register</button>
     </form>
   </section>
